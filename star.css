@@ -1,8 +1,15 @@
-*{
+*{background-color: antiquewhite;
     margin: 0%;
     padding:0%;
+}a{
+    color:black;
+    font-size: large;
+}ul{
+    background-color: antiquewhite;
+    justify-content: center;
+    gap: 20px;
+    
 }
-
     h1{   
     text-align:center;
     padding: 15px;
@@ -10,91 +17,30 @@
     color: rgb(255, 255, 255);
 }
 #container{
-    margin-top: 30px;
-    height: 500;
-    padding: 20px;
     display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-    gap: 50px;
+    grid-template-columns:auto auto auto auto;
     text-align: center;
-    float:left;
-    background-color: rgba(226, 32, 64, 0.86);
- 
+}footer{
+    background-color: rgb(104, 241, 241);
+    padding: 30px;
+    text-align: center;
+}img{
+    border-radius: 50%;
+}p{
+    padding: 20px;
 }
 
 .u{  
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    background-color: rgb(74, 134, 74);
-    padding: 20px;
+    display: flex;
+    padding: 10px;
     text-align: center;
     list-style-type: none;
     font: bold;
 }
-.a{
-    margin-top: 30px;
-    height: 535px;
-    background-color: rgba(140, 140, 140, 0.47);
-}
-.f{
-    padding: 20px;
-    background-color: rgb(25, 210, 102) ;
-    text-align: center;
-}
+ 
 @media  (max-width: 480px) {
-    h1{
-        position:sticky;
-        top:0%;
-        text-align: center;
-        padding: 3px; 
-    }
     #container{
-        
-        display: grid;
-        grid-template-columns:repeat(1,1fr) ;
-        gap: 2px;
-        text-align: center;
-        float:left;
-        background-color: white; 
+        grid-template-columns: auto auto;
+        padding-top: 20px;
     }
-    .a{
-      margin-top: 45px;
-      height: 1370px;
-      background-color: rgba(140, 140, 140, 0.47);
-    }
-    .f{
-        padding: 20px;
-        background-color: rgb(25, 210, 102) ;
-        text-align: center;
-    }
-    .n{
-        position:sticky;
-      top: 150px;
-    }
-}
-
-@media (min-width: 768px)and (max-width:1024px) {
-    h1{
-        position:sticky;
-        top:0%;
-    }
-    #container{
-        height: 1345px;
-        display: grid;
-        grid-template-columns:repeat(2,1fr) ;
-        gap: 2px;
-        text-align: center;
-        float:left;
-        background-color: rgba(208, 204, 211, 0.638); 
-    }
-    .a{
-    
-        margin-top: 45px;
-        height: 1370px;
-        background-color: rgba(140, 140, 140, 0.47);
-      }
-      .n{
-        position:sticky;
-      top: 170px;
-    }
 }
